@@ -1,0 +1,2 @@
+Date: 2024-03-12 22:20:33 || Food: rice ||Calories: 200.0 || Protein: 20.0 || Carbs: 20.0 || Fats: 20.0
+Date: 2024-03-12 22:20:33 || Food: potatoes ||Calories: 150.0 || Protein: 10.0 || Carbs: 10.0 || Fats: 10.0
