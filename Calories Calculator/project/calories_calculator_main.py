@@ -78,17 +78,17 @@ class NutritionTracker:
 
             if calories_sum > 0 and protein_sum > 0 and fats_sum > 0 and carbs_sum > 0:
                 fig, axs = plt.subplots(2, 2)
-                axs[0, 0].pie([protein_sum, fats_sum, carbs_sum], labels=["Proteins", "Fats", "Carbs"],
-                              autopct=lambda p: f'{p * sum([protein_sum, fats_sum, carbs_sum]) / 100:.0f}')
+                axs[0, 0].pie([protein_sum, fats_sum, carbs_sum], labels=["Proteins", "Fats", "Carbs"], autopct='%1.1f%%')  # It returns percent
                 axs[0, 0].set_title("Macronutrients Distribution")
                 axs[0, 1].bar([0, 1, 2], [protein_sum, fats_sum, carbs_sum], width=0.4)
+                axs[0, 1].set_xticks([0, 1, 2])
+                axs[0, 1].set_xticklabels(["Protein", "Fats", "Carbs"])  # Set label
                 axs[0, 1].bar([0.5, 1.5, 2.5], [self.PROTEIN_GOAL, self.FATS_GOAL, self.CARBS_GOAL], width=0.4)
                 axs[0, 1].set_title("Macronutrients progress")
-                axs[1, 0].pie([calories_sum, self.CALORIES_GOAL_LIMIT - calories_sum], labels=["Calories", "Remaining"],
-                              autopct=lambda p: f'{p * sum([calories_sum, self.CALORIES_GOAL_LIMIT - calories_sum]) / 100:.0f}')
+                axs[1, 0].pie([calories_sum, self.CALORIES_GOAL_LIMIT - calories_sum], labels=["Calories", "Remaining"], autopct='%1.1f%%')  # It returns percent
                 axs[1, 0].set_title("Calories Goal Progress")
                 axs[1, 1].plot(list(range(len(self.today))), np.cumsum([food.calories for food in self.today]), label="Calories Eaten")
-                axs[1, 1].plot(list(range(len(self.today))), [self.CALORIES_GOAL_LIMIT] * len(self.today), label="Calorie Goal")
+                axs[1, 1].plot(list(range(len(self.today))), [self.CALORIES_GOAL_LIMIT] * len(self.today), label="Calories Goal")
                 axs[1, 1].legend()
                 axs[1, 1].set_title("Calories Goal Over Time")
 
@@ -105,7 +105,7 @@ class NutritionTracker:
             max_name_length = max(len(food.name) for food in self.today)
             food_data = [
                 f"\n[{idx + 1}]. Food name: {food.name.ljust(max_name_length)} || " +
-                f"Calories: {str(food.calories).ljust(3)} || " +
+                f"Calories: {str(food.calories).ljust(3)} || " +   # Equal number spaces
                 f"Proteins: {str(food.protein).ljust(3)} || " +
                 f"Fats: {str(food.fats).ljust(3)} || " +
                 f"Carbs: {str(food.carbs).ljust(3)} ||" +
@@ -149,9 +149,9 @@ class NutritionTracker:
                 if current_nutrient >= 0:
                     break
                 else:
-                    print("Invalid input! Please enter a number greater than zero!")
+                    print("Invalid input! Please enter a number greater than or equal to zero!")
             except ValueError:
-                print("Invalid input! Please enter an integer.")
+                print("Invalid input! Please enter a number.")
         return current_nutrient
 
     def _take_input(self, info):
