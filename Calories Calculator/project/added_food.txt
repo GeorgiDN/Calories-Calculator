@@ -1,2 +1,5 @@
-Date: 2024-03-12 22:20:33 || Food: rice ||Calories: 200.0 || Protein: 20.0 || Carbs: 20.0 || Fats: 20.0
-Date: 2024-03-12 22:20:33 || Food: potatoes ||Calories: 150.0 || Protein: 10.0 || Carbs: 10.0 || Fats: 10.0
+Date: 2024-03-13 20:35:55 || Food: rice ||Calories: 300.0 || Protein: 30.0 || Carbs: 10.0 || Fats: 20.0
+Date: 2024-03-13 20:35:55 || Food: potatoes ||Calories: 150.0 || Protein: 25.0 || Carbs: 20.0 || Fats: 15.0
+Date: 2024-03-13 20:35:55 || Food: chicken ||Calories: 300.0 || Protein: 50.0 || Carbs: 10.0 || Fats: 42.0
+Date: 2024-03-13 20:35:55 || Food: tomatoes ||Calories: 10.0 || Protein: 1.0 || Carbs: 12.0 || Fats: 5.0
+Date: 2024-03-13 20:35:56 || Food: beef ||Calories: 200.0 || Protein: 30.0 || Carbs: 20.0 || Fats: 20.0
