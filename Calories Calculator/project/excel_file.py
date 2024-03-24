@@ -2,7 +2,7 @@ from openpyxl import *
 from datetime import datetime, timedelta
 
 # Create a new workbook
-wb = load_workbook('D:\PYTHON_PROJECTS_5\GENERALS_ALL\Projects_1\CALORIES_CALCULATOR\calories_calculator_12_3_24\project_calculator\Food_data.xlsx')
+wb = load_workbook('Food_data.xlsx')
 sheet = wb.active
 
 
@@ -48,9 +48,7 @@ def add_food_to_excel(time, food_name, calories, protein, carbs, fats):
     sheet.cell(row=next_row, column=5).value = carbs
     sheet.cell(row=next_row, column=6).value = fats
 
-    wb.save('D:\PYTHON_PROJECTS_5\GENERALS_ALL\Projects_1\CALORIES_CALCULATOR\calories_calculator_12_3_24\project_calculator\Food_data.xlsx')
+    wb.save('Food_data.xlsx')
 
 
 excel()
-
-
