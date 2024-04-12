@@ -3,7 +3,7 @@ Comprehensive Nutrition Tracker with Visual Progress Visualization and Excel Dat
 
 This Python code consists of a Nutrition Tracking System that allows users to track their daily food intake and visualize their progress towards nutrition goals. It includes functionalities to add food entries, visualize progress through graphs, view food entries, remove food entries, and view nutrition goals for the day.
 
-Main Code (nutrition_tracker.py):
+Main Code (calories_calculator_main.py):
 
 Imports necessary libraries including dataclass for defining data structures, numpy for numerical calculations, matplotlib.pyplot for plotting graphs, and datetime for handling date and time.
 Defines a Food class using the dataclass decorator to represent food items with attributes such as name, calories, protein, fats, and carbs.
@@ -18,11 +18,13 @@ Includes a function to format the Excel sheet by resizing columns and adding hea
 Utilizes the datetime module to record the time of food entries in the Excel sheet.
 Usage:
 
-The main code (nutrition_tracker.py) is executed to create a NutritionTracker instance and provide options for users to interact with the system through a command-line interface.
+The main code (calories_calculator_main.py) is executed to create a NutritionTracker instance and provide options for users to interact with the system through a command-line interface.
 Users can add food entries, view their progress, visualize data through graphs, remove food entries, and view nutrition goals.
 Food data is stored in an Excel file (Food_data.xlsx) using the functions defined in excel_file.py.
 Note:
 
 Ensure the Excel file path specified in excel_file.py matches the actual file location on your system.
 You may need to install additional libraries such as openpyxl if they are not already installed in your Python environment.
-Overall, this code provides a comprehensive solution for tracking nutrition intake and visualizing progress, suitable for individuals seeking to manage their dietary habits effectively.
+
+Overall, this code provides a comprehensive solution for tracking nutrition intake and visualizing progress, suitable for individuals seeking to manage their dietary habits.
+Also there is a potential areas for future development.
