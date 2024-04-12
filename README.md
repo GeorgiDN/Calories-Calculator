@@ -27,4 +27,5 @@ Ensure the Excel file path specified in excel_file.py matches the actual file lo
 You may need to install additional libraries such as openpyxl if they are not already installed in your Python environment.
 
 Overall, this code provides a comprehensive solution for tracking nutrition intake and visualizing progress, suitable for individuals seeking to manage their dietary habits.
+
 Also there is a potential areas for future development.
