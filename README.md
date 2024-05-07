@@ -1,4 +1,4 @@
-# Calories-Calculator Project
+# Calories-Calculator
 Comprehensive Nutrition Tracker with Visual Progress Visualization and Excel Data Storage
 
 This Python code consists of a Nutrition Tracking System that allows users to track their daily food intake and visualize their progress towards nutrition goals. It includes functionalities to add food entries, visualize progress through graphs, view food entries, remove food entries, and view nutrition goals for the day.
